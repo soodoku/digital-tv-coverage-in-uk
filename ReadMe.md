@@ -37,7 +37,7 @@ Data from [UK Digital TV Coverage](http://www.digitaluk.co.uk/coveragechecker/) 
 
 #### Data
 
-1. [error.csv](data/error.csv): All the postcodes for which no data are returned.
+1. [errors](data/errors): All the postcodes for which no data are returned.
 2. [output.csv](http://dx.doi.org/10.7910/DVN/NRY5OP)  (Harvard DVN Link): Data on the postcodes for which data are returned:
     * Postal code of the address: postal.code
     * Quality of TV Signal: quality.terrestrial.tv.signal
