@@ -31,6 +31,12 @@ Data from [UK Digital TV Coverage](http://www.digitaluk.co.uk/coveragechecker/) 
     
     * Given there are 2.5 million postcodes, run multiple instances. For instance, if a page takes 1 second to return, we need approximately 700 hours or nearly 29 days to download the data using a single instance. 
 
+    ```{r sample_run_code}
+
+    nohup RScript downloader.R & 
+    
+    ```
+
 2. Concatenate all the `error` files and put all the html files in a single folder.
 
 3. Parse the Data: 
