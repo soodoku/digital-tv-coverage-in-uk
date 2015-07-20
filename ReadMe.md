@@ -1,11 +1,11 @@
-### UK Digital TV Coverage Data
+### UK Digital TV Coverage Data and Scripts
 
 Data from [UK Digital TV Coverage](http://www.digitaluk.co.uk/coveragechecker/) and scripts for getting the data. 
 
 
 #### Getting the Data
 
-1. Downloading the Data: 
+1. Download the Data: 
 	
 	* Start with a file containing [all the postcodes](http://dx.doi.org/10.7910/DVN/NRY5OP) (Harvard DVN Link). The data are from UK's [Office of National Statistics](http://www.ons.gov.uk/ons/guide-method/geography/products/postcode-directories/-nspp-/index.html).
 
@@ -33,7 +33,8 @@ Data from [UK Digital TV Coverage](http://www.digitaluk.co.uk/coveragechecker/) 
 
 2. Concatenate all the `error` files and put all the html files in a single folder.
 
-3. Run [converter.py](converter.py) with the folder containing html files as the source folder. The python script will produce  output.csv (you can change the name of the ouput file.)
+3. Parse the Data: 
+    * Run [converter.py](converter.py) with the folder containing html files as the source folder. The python script will produce  output.csv (you can change the name of the ouput file.)
 
 #### Data
 
