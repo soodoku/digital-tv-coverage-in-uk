@@ -34,10 +34,14 @@ Data from [UK Digital TV Coverage](http://www.digitaluk.co.uk/coveragechecker/) 
     ```{r sample_run_code}
 
     nohup RScript downloader.R & 
-    
+
     ```
 
 2. Concatenate all the `error` files and put all the html files in a single folder.
+    ```
+    cat *error > errors
+    
+    ```
 
 3. Parse the Data: 
     * Run [converter.py](converter.py) with the folder containing html files as the source folder. The python script will produce  output.csv (you can change the name of the ouput file.)
