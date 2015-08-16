@@ -1,7 +1,6 @@
 ### UK Digital TV Coverage Data and Scripts
 
-Data from [UK Digital TV Coverage](http://www.digitaluk.co.uk/coveragechecker/) and scripts for getting the data. 
-
+[UK Digital TV Coverage](http://www.digitaluk.co.uk/coveragechecker/) data, and scripts for getting that data. 
 
 #### Getting the Data
 
