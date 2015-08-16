@@ -44,10 +44,8 @@ Temporary Items
 
 
 # Discretionary
-source/
-data/small_ons.csv
-<<<<<<< HEAD
-data/output.csv
-=======
-data/output.csv
->>>>>>> parent of 5329166... Output
+dev/
+data/notes.txt
+data/small_ons.7z
+data/output.7z
+data/final_server.tar.gz

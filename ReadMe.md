@@ -44,7 +44,7 @@ Data from [UK Digital TV Coverage](http://www.digitaluk.co.uk/coveragechecker/) 
     ```
 
 3. Parse the Data: 
-    * Run [converter.py](converter.py) with the folder containing html files as the source folder. The python script will produce  output.csv (you can change the name of the ouput file.)
+    * Run [converter.py](converter.py) with the folder containing html files as the source folder ([sample html files folder](data/sample_src_data/). The python script will produce `output.csv` (you can change the name of the ouput file.)
 
 #### Data
 
