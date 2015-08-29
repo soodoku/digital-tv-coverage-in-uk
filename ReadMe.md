@@ -28,7 +28,7 @@
 
     ```
     
-    * Given there are 2.5 million postcodes, run multiple instances. For instance, if a page takes 1 second to return, we need approximately 700 hours or nearly 29 days to download the data using a single instance. 
+    * Given there are 2.5 million postcodes, run multiple instances. For instance, if a page takes 1 second to return, we need approximately 700 hours or nearly 29 days to download the data using a single instance. ([See here](https://gist.github.com/soodoku/3e3eb8d842a73400d9a8) for basic installs for initializing a R based scraper on Ubuntu.)
 
     ```{r sample_run_code}
 
