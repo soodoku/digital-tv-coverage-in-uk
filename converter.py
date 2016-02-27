@@ -71,7 +71,7 @@ def scan_all_files(log_data):
         for filename in flist:
             count = count + 1
             if (count%1000==0):
-                print ("Processing file %s000th"%(count/1000,))
+                print ("Processing file {0!s}000th".format(count/1000))
 
             with open (mypath + "/" + filename, "r") as myfile:
                 # Read the file
@@ -117,11 +117,11 @@ def scan_all_files(log_data):
                                'transmitterRegion':transmitterRegion,
                                'digitalServices':digitalServices,
                                'channels':channels}
-                    rowStr = "%s,%s,%s,%s"%(row['code'],row['signalQuality'],row['transmitterName'],row['transmitterRegion'],)
+                    rowStr = "{0!s},{1!s},{2!s},{3!s}".format(row['code'], row['signalQuality'], row['transmitterName'], row['transmitterRegion'])
                     for service in DIGITAL_SEVICES:
-                        rowStr =rowStr + ',%d' % (int(service in row['digitalServices']),)
+                        rowStr =rowStr + ',{0:d}'.format(int(service in row['digitalServices']))
                     for channel in CHANNELS:
-                        rowStr =rowStr + ',%d' % (int(channel in row['channels']),)
+                        rowStr =rowStr + ',{0:d}'.format(int(channel in row['channels']))
                     my_output_file.write(rowStr + "\n")
 
 print "------------FIRST PHASE----------------"
@@ -132,11 +132,11 @@ DIGITAL_SEVICES = sorted(DIGITAL_SEVICES)
 CHANNELS = sorted(CHANNELS)
 
 # Genearate the column name list
-headerStr = "%s,%s,%s,%s"%('postal.code','quality.terrestrial.tv.signal','transmitter.name','transmitter.region',)
+headerStr = "{0!s},{1!s},{2!s},{3!s}".format('postal.code', 'quality.terrestrial.tv.signal', 'transmitter.name', 'transmitter.region')
 for service in DIGITAL_SEVICES:
-    headerStr =headerStr + ',service.%s' % (service,)
+    headerStr =headerStr + ',service.{0!s}'.format(service)
 for channel in CHANNELS:
-    headerStr =headerStr + ',channel.%s' % (channel,)
+    headerStr =headerStr + ',channel.{0!s}'.format(channel)
 my_output_file.write(headerStr + "\n")
 
 
