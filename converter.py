@@ -96,7 +96,7 @@ def scan_all_files(log_data):
                 # Extract list of available digitalServices
                 digitalServices=set()
                 digitalService,data = findWithPattern(data,"<li class=\"reception_option ","\">")
-                while len(digitalService)>0:
+                while digitalService:
                     digitalServices.add(digitalService)
                     digitalService,data = findWithPattern(data,"<li class=\"reception_option ","\">")
                 DIGITAL_SEVICES = DIGITAL_SEVICES.union(set(digitalServices))
@@ -104,7 +104,7 @@ def scan_all_files(log_data):
                 # Extract list of available channels
                 channels=set()
                 channel,data = findWithPattern(data,"<span class=\"alt\">","</span>")
-                while len(channel)>0:
+                while channel:
                     channels.add(channel)
                     channel,data = findWithPattern(data,"<span class=\"alt\">","</span>")
                 CHANNELS = CHANNELS.union(set(channels))
