@@ -1,4 +1,4 @@
-### UK Digital TV Coverage Data and Scripts
+### UK Digital TV Coverage
 
 [UK Digital TV Coverage](http://www.digitaluk.co.uk/coveragechecker/) data, and scripts for getting that data. 
 
@@ -57,4 +57,4 @@
     * Channels available: channel.* (entertainment, hd, childrens, news, adult, text stream, radio.. etc.).
     
 #### License
-Scripts are released under the [MIT License](License.md).
+Scripts are released under the [MIT License](https://opensource.org/licenses/MIT).
